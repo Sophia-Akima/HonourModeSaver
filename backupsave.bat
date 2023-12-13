@@ -30,11 +30,11 @@ set useWinRAR=false
 
 :: The filename you wish to use for backup, you don't need to change this unless you want to
 if %useWinRAR%==true (
-	set "fileName=%cd%HonourMode.rar"
-	set "fileBackup=%cd%HonourMode_PreviousSave.rar"
+	set "fileName=%cd%\HonourMode.rar"
+	set "fileBackup=%cd%\HonourMode_PreviousSave.rar"
 ) else (
-	set "fileName=%cd%HonourMode.7z"
-	set "fileBackup=%cd%HonourMode_PreviousSave.7z"
+	set "fileName=%cd%\HonourMode.7z"
+	set "fileBackup=%cd%\HonourMode_PreviousSave.7z"
 )
 echo 	fileName = %fileName%
 echo 	fileBackup = %fileBackup%
